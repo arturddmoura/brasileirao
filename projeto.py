@@ -35,8 +35,7 @@ df_tabela = pd.DataFrame(dados_tabela)
 
 x = np.arange(6)
 plt.bar(x, height=[df_tabela["Número"][0], df_tabela["Número"][1], df_tabela["Número"][2], df_tabela["Número"][3], df_tabela["Número"][4], df_tabela["Número"][5]])
-plt.xticks(x, ["Vitórias\nMandante", "Vitórias\nVisitante", "Empates\nMandante", "Empates\nVisitante", "Mandante\nDerrotas", "Visitante\nDerrotas"])
-
+plt.xticks(x, ["Vitórias\nMandante", "Vitórias\nVisitante", "Empates\nMandante", "Empates\nVisitante", "Derrotas\nMandante", "Derrotas\nVisitante"])
 plt.title(f"Campanha de {ano_input} do {time} no Brasileirão")
 
 plt.show()
